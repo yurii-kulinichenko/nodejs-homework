@@ -11,9 +11,11 @@ const contactSchema = new Schema(
         },
         email: {
             type: String,
+            required: [true, 'Email is required'],
         },
         phone: {
             type: String,
+            required: [true, 'Phone is required'],
         },
         favorite: {
             type: Boolean,
